@@ -8,7 +8,7 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 const port = process.env.PORT || 3000;
-const corsOptions = process.env.FRONTEND_URL;
+const corsOptions = ['https://food-web-front.vercel.app'];
 app.use(cors({ origin: corsOptions, credentials: true }));
 
 app.use(express.json())
